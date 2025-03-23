@@ -118,7 +118,7 @@ function App() {
   // Function to analyze image with Gemini API
   const analyzeImageWithGemini = async (imageBase64) => {
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDyFUmT8OtZdJDHzc0R1Ro-pBdJrSjIkDc`, {
+      const response = await fetch(`https://vision.googleapis.com/v1/images:annotate?key=AIzaSyDG_8Lc5X4uSW50YWcT_L-aCrwOhHpLT3Q`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
