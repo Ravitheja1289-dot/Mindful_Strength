@@ -5,7 +5,7 @@ import './components/MentalHealthApp.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <MentalHealthApp />
     </div>
   );
