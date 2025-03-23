@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Chatbot.css';
 
-function App() {
+function Chatbot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [isListening, setIsListening] = useState(false);
@@ -108,7 +108,7 @@ function App() {
       
       // Call Gemini API for image analysis
       const response = await analyzeImageWithGemini(imageBase64);
-      addMessage('Gemini', response);
+      addMessage('Vision', response);
     } catch (error) {
       console.error('Error analyzing image:', error);
       addMessage('System', 'Failed to analyze image. Please try again.');
@@ -310,4 +310,4 @@ function App() {
   );
 }
 
-export default App;
+export default Chatbot;

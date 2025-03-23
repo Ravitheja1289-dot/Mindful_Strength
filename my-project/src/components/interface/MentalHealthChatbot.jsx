@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { AlertCircle, MessageSquare, Mic, Camera, Menu, Moon, Sun, User, BarChart } from 'lucide-react';
 
-const MentalHealthApp = () => {
+const MentalHealthChatbot = () => {
   const [activeTab, setActiveTab] = useState('chat');
   const [messages, setMessages] = useState([
     { text: "Hi there! How are you feeling today?", sender: 'bot' }
@@ -413,4 +413,4 @@ const MentalHealthApp = () => {
   );
 };
 
-export default MentalHealthApp;
+export default MentalHealthChatbot;
